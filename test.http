@@ -1,0 +1,30 @@
+###
+# @name getAllTodos
+GET http://localhost:3000/todos
+Content-Type: application/json
+
+###
+
+# @name getTodoById
+GET http://localhost:3000/todos/1
+Content-Type: application/json
+
+###
+
+# @name addTodo
+POST http://localhost:3000/todos/add
+Content-Type: application/json
+
+{
+    "title": "New Todo"
+}
+
+###
+
+# @name editTodo
+PUT http://localhost:3000/todos/edit/1
+Content-Type: application/json
+
+{
+    "title": "Updated Todo"
+}
